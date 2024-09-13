@@ -1,0 +1,16 @@
+{
+  "name": "to_the_future",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@irys/sdk": "^0.2.11",
+    "arweave": "^1.15.1"
+  }
+}

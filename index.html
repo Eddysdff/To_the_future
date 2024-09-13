@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To the Future - Chapter 1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        #game-container {
+            width: 1600px;
+            height: 800px;
+            background-color: #111;
+            border: 2px solid #333;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+        #chapter-title {
+            text-align: center;
+            padding: 10px;
+            background-color: #222;
+            font-size: 1.2em;
+        }
+        #scene-image {
+            width: 100%;
+            height: 65%;
+            background-size: cover;
+            background-position: center;
+        }
+        #dialog-box {
+            height: 20%;
+            padding: 10px;
+            overflow-y: auto;
+            box-sizing: border-box;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        #choices {
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+            background-color: #222;
+        }
+        .choice-btn {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        #wallet-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #chapter-progress {
+            position: absolute;
+            bottom: 5px;
+            right: 10px;
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+<body>
+    <div id="game-container">
+        <div id="chapter-title">Chapter 1: The Adventure from Treetops to Grasslands - Venturing into the Unknown</div>
+        <button id="wallet-button">Connect Wallet</button>
+        <div id="scene-image"></div>
+        <div id="dialog-box">
+            <p id="dialog-text">Welcome to "To the Future"!</p>
+        </div>
+        <div id="choices"></div>
+        <div id="chapter-progress">Progress: <span id="progress-value">0</span>%</div>
+    </div>
+
+    <script src="https://unpkg.com/arweave/bundles/web.bundle.min.js"></script>
+    <script src="https://unpkg.com/@permaweb/aoconnect/dist/browser/aoconnect.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
